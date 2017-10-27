@@ -255,7 +255,7 @@
 				android:layout_below="@id/detail_info"
 				android:padding="10dp">
 			
-				<us.shandian.giga.ui.common.BlockGraphView
+				<com.azdownloader.ui.common.BlockGraphView
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:id="@+id/info_graph"/>

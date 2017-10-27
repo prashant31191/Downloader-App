@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="us.shandian.giga" >
+	package="com.azdownloader" >
 	
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -27,7 +27,7 @@
         </activity>-->
 		
 		<activity
-			android:name=".ui.main.MainActivity"
+			android:name="com.azdownloader.ui.main.MainActivity"
 			android:label="@string/app_name"
 			android:theme="@style/Theme_App_Blue"
 			android:launchMode="singleTask">
@@ -38,7 +38,7 @@
 				<category android:name="android.intent.category.BROWSABLE" />
 			</intent-filter>
 			<intent-filter>
-				<action android:name="us.shandian.giga.intent.DOWNLOAD"/>
+				<action android:name="com.giga.intent.DOWNLOAD"/>
 				<category android:name="android.intent.category.DEFAULT"/>
 				<category android:name="android.intent.category.BROWSABLE"/>
 				<data
@@ -73,7 +73,7 @@
 		</activity>
 		
 		<activity
-			android:name=".ui.main.DetailActivity"
+			android:name="com.azdownloader.ui.main.DetailActivity"
 			android:label="@string/app_name"
 			android:theme="@style/Theme_App_Blue">
 
@@ -85,7 +85,7 @@
 		</activity>
 		
 		<activity
-			android:name=".ui.web.BrowserActivity"
+			android:name="com.azdownloader.ui.web.BrowserActivity"
 			android:label="@string/browser"
 			android:theme="@style/Theme_App_Blue">
 
@@ -99,7 +99,7 @@
 		<activity-alias
 			android:name=".ui.web.BrowserActivity-share"
 			android:label="@string/open_with_gigaget"
-			android:targetActivity=".ui.web.BrowserActivity">
+			android:targetActivity="com.azdownloader.ui.web.BrowserActivity">
 			
 			<intent-filter>
 				<action android:name="android.intent.action.SEND"/>
@@ -112,7 +112,7 @@
 
 		
 		<activity
-			android:name=".ui.settings.SettingsActivity"
+			android:name="com.azdownloader.ui.settings.SettingsActivity"
 			android:label="@string/settings"
 			android:theme="@style/Theme_App_Blue">
 
@@ -126,7 +126,7 @@
 		</activity>
 
 		<activity
-			android:name=".ui.main.AudioChangeActivity"
+			android:name="com.azdownloader.ui.main.AudioChangeActivity"
 			android:label="@string/settings"
 			android:theme="@style/Theme_App_Blue">
 
@@ -171,7 +171,7 @@
 		</activity>-->
 		
 		<service
-			android:name=".service.DownloadManagerService"/>
+			android:name="com.azdownloader.service.DownloadManagerService"/>
 
     </application>
 
